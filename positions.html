@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .primary{
+            height: 150vh;
+            width: 100vw; 
+            background-color: yellow;
+            border: 1px solid red;
+
+        }
+
+        .main{
+
+            /* height: 150vh;
+            width: 100vw; */
+            z-index: 1000;
+            background-color: yellow;
+            width: 160px;
+            height: 160px;
+            transform-style: preserve-3d;
+            transform: rotate3d(1, -7, 1, 20deg);
+            margin: 80px auto;
+
+        }
+
+
+        .box{
+
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            position: absolute;
+            /* left: 10rem; */
+            top: 10rem;
+            border-top-right-radius: 40px;
+            border-bottom-left-radius: 40px;
+            /* box-shadow: -10px 10px 1px green; */
+            color: rgb(238, 238, 231);
+            display: inline-block;
+        }
+
+        /* #box1{
+
+            background-color: aqua;
+            color: red;
+            z-index: 1000;
+            top: 1rem;
+            left: 2rem;
+            border-top-right-radius: 40px;
+            border-bottom-left-radius: 40px; */ 
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            /* transform: translateX(10rem);
+            transform: translateY(10rem);
+            transform: translateZ(20rem);
+            transform: translate3d(45rem); */
+         /* } */
+
+        /* #box2{
+
+        background-color: rgb(219, 156, 20);
+        color: red;
+        z-index: 1001;
+        } */
+
+
+/* 
+        #box2{
+
+            /* margin-left: 200px; */
+
+            /* position: relative; */
+
+            /* top: 500px; */
+        /* } */
+
+        /* #box3{ */
+
+            /* margin-left: 250px; */
+
+            /* position: absolute; */
+
+            /* left: 450px; */
+
+            /* position: fixed;
+            top: 5rem;
+            left: 10rem; */
+        /* } */ 
+
+        /* #box1{
+
+            transform: translateZ(0px);
+            background: rgba(10, 216, 96, 0.76);
+            animation: anim1 3s;
+        }
+
+        #box2{
+
+            transform: translateZ(60px);
+            background: rgba(233, 12, 12, 0.76);
+            animation: anim2 3s;
+        }
+
+        #box3{
+
+            transform: translateZ(120px);
+            background: rgba(181, 245, 6, 0.9);
+            animation: anim3 3s;
+        }
+
+        #box4{
+
+            transform: translateZ(180px);
+            background: rgba(70, 6, 236, 0.97);
+            animation: anim4 3s;
+        }
+
+        @keyframes anim1 {
+            
+            from{
+                transform: translateZ(0px);
+            }to{
+                transform: translateZ(0px);
+            }
+            
+        }
+
+        @keyframes anim2 {
+            
+            from{
+                transform: translateZ(0px);
+            }to{
+                transform: translateZ(60px);
+            }
+            
+        }
+
+        @keyframes anim3 {
+            
+            from{
+                transform: translateZ(0px);
+            }to{
+                transform: translateZ(120px);
+            }
+            
+        }
+
+        @keyframes anim4 {
+            
+            from{
+                transform: translateZ(0px);
+            }to{
+                transform: translateZ(180px);
+                rotate: 120deg;
+            }
+            
+        } */
+
+        .box{
+
+            /* transform: skew(-120deg); */
+            transform: scale(2);
+        }
+
+        .box:hover{
+
+            box-shadow: 10px 10px 10px green;
+            cursor: pointer;
+            rotate: 180deg;
+        }
+
+        .box{
+
+            transition: all ease .8s;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!-- 1rem = 16 pixels -->
+
+    <div class="primary">
+     <div class="main">
+
+        <div class="box" id="box1">Box1</div>
+        <!-- <div class="box" id="box2">Box2</div>
+        <div class="box" id="box3">Box3</div>
+        <div class="box" id="box4">Box4</div> -->
+        
+    </div>
+</div>
+</body>
+</html>

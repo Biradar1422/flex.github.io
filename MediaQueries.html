@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQueries</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main{
+
+            height: 80vh;
+            width: 100vw;
+            background-color: yellowgreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            
+        }
+
+        /* ********************************Screen layouts************************ */
+        /* @media screen and (min-width : 0px) and (max-width: 360px) {
+            
+            .main{
+
+                background-color: orange;
+                color: red;
+            }
+        }
+
+        @media screen and (min-width : 360px) and (max-width: 820px) {
+            
+            .main{
+
+                background-color: rgb(240, 22, 193);
+                color: rgb(241, 234, 234);
+            }
+        } */
+
+
+         @media screen and (min-width : 0px) and (max-width: 820px) {
+            
+            .main{
+
+                align-items: flex-start;
+                text-align: left;
+                pad: 1rem;
+            }
+        }
+
+        /* @media screen and (min-width : 360px) and (max-width: 820px) {
+            
+            .main{
+
+                background-color: rgb(240, 22, 193);
+                color: rgb(241, 234, 234);
+            }
+        }  */
+        /* small device 0 to 360 */
+        /* 375 */
+        /*  */
+        /* tablet  mode - 425 to 768 px */
+        /* mideum laptop -  768 to 1024  */
+        /* large laptop - more than 1024px */
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <h1>Responsive layout...!!!</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             Quaerat magni sint perferendis facere ea quae atque magnam tempore? Praesentium, 
+            consequuntur a. Adipisci dicta at similique, vel quia nostrum laborum enim?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Quaerat magni sint perferendis facere ea quae atque magnam tempore? Praesentium, 
+            consequuntur a. Adipisci dicta at similique, vel quia nostrum laborum enim?</p>
+    </div>
+</body>
+</html>

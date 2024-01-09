@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        *{
+            margin : 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main{
+
+            height: 100vh;
+            width: 100vw;
+            background-color: yellow;
+            display: flex;
+             justify-content: space-around; 
+             /* ----right---- */
+            align-items: center;
+            /* -----left------ */
+            /* flex-wrap: wrap; */
+            flex-direction: row;
+        }
+
+        .box{
+
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            display: block;
+            color: white;
+            /* 1.relative 
+            2.absolute
+            3.fixed
+            4.sticky
+            5.static */
+        }
+
+        /* #box2{
+
+            position: fixed;
+            /* top: 80%;
+            left: 90%; */
+        } */
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+</body>
+</html>
